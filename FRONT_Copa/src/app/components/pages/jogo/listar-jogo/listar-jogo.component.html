@@ -2,14 +2,15 @@
   <tr>
     <th>#</th>
     <th>Seleção A</th>
-    <th> </th>
     <th>X</th>
     <th>Seleção A</th>
     <th> </th>
   </tr>
-  <!-- <tr *ngFor="let jogo of jogos">
+  <tr *ngFor="let jogo of jogos">
     <td>{{ jogo.id }}</td>
-    <td>{{ jogo.selecao?.nome }}</td>
-  </tr> -->
+    <td>{{ jogo.selecaoA?.nome}}</td>
+    <td>{{ jogo.selecaoB?.nome}}</td>
+    <!-- <td><button (click)="palpitar(funcionario.id!)">Palpitar</button></td> -->
+  </tr>
 </table>
 

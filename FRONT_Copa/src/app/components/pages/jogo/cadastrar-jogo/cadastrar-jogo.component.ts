@@ -17,11 +17,10 @@ import { Jogo } from "src/app/models/jogo.model";
 
 export class CadastrarJogoComponent implements OnInit {
 
-  selecaoId!: number;
-  selecaoA!: Selecao;
-  selecaoB!: Selecao;
   selecaoAId!: number;
+  selecaoA!: Selecao;
   selecaoBId!: number;
+  selecaoB!: Selecao;
   selecoes!: Selecao[];
   criadoEm!: string;
   
