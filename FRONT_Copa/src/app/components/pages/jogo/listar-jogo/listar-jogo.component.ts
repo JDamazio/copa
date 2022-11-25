@@ -20,4 +20,8 @@ export class ListarJogoComponent implements OnInit {
         }
       })
   }
+
+  palpitar(id: number): void{
+    // this.http.post
+  }
 }

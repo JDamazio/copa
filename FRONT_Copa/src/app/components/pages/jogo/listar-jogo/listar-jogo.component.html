@@ -1,16 +1,21 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Listar Jogos </mat-card-title>
+</mat-card-header>
 <table>
   <tr>
     <th>#</th>
     <th>Seleção A</th>
     <th>X</th>
     <th>Seleção A</th>
-    <th> </th>
+    <th>Palpitar</th>
   </tr>
   <tr *ngFor="let jogo of jogos">
     <td>{{ jogo.id }}</td>
     <td>{{ jogo.selecaoA?.nome}}</td>
+    <td></td>
     <td>{{ jogo.selecaoB?.nome}}</td>
-    <!-- <td><button (click)="palpitar(funcionario.id!)">Palpitar</button></td> -->
+    <td><button (click)="palpitar(jogo.id!)">Palpitar</button></td>
   </tr>
 </table>
 
